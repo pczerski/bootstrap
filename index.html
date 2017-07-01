@@ -1,10 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <title>bootstrap</title>
+    <meta charset="utf-8">
+    <!-- Zapewnienie reagowania zawartości strony na różne wielkości ekranu -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Skompresowany Bootstrap CSS dodany lokalnie -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--  Style po Bootstrap  -->
+
 </head>
+
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" ariaexpanded="
+false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Treść strony -->
+    <!--  Kontenery  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6"></div>
+        </div>
+    </div>
+    <!--  fluid zawsze na szer. 100% z paddingami po 15px  -->
+    <div class="container-fluid">
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit qui itaque in rem explicabo neque, architecto tempora officiis debitis doloremque vitae a alias laudantium minus magnam, vero illo aperiam, totam.</p>
+        <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit qui itaque in rem explicabo neque, architecto tempora officiis debitis doloremque vitae a alias laudantium minus magnam, vero illo aperiam, totam.</p>
+        <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit qui itaque in rem explicabo neque, architecto tempora officiis debitis doloremque vitae a alias laudantium minus magnam, vero illo aperiam, totam.</p>
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit qui itaque in rem explicabo neque, architecto tempora officiis debitis doloremque vitae a alias laudantium minus magnam, vero illo aperiam, totam.</p>
+        <p class="text-nowrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit qui itaque in rem explicabo neque, architecto tempora officiis debitis doloremque vitae a alias laudantium minus magnam, vero illo aperiam, totam.</p>
+        <div id="text-transform">
+            <p class="text-uppercase">testowy testowy testowy</p>
+            <p class="text-lowercase">Testowy Testowy Testowy</p>
+            <p class="text-capitalize">testowy testowy testowy</p>
+        </div>
+    </div>
     
+<!--  Bootsrtap carousel  -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://placehold.it/1200x315" alt="...">
+      <div class="carousel-caption">
+      	<h3>Caption Text</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x315" alt="...">
+      <div class="carousel-caption">
+      	<h3>Caption Text</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x315" alt="...">
+      <div class="carousel-caption">
+      	<h3>Caption Text</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
+    <!-- jQuery (wymagany dla Bootstrap JavaScript) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Skompresowany plik Bootstrap JavaScript dodany lokalnie -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="js/script.js"></script>
 </body>
+
 </html>
